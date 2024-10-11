@@ -30,6 +30,11 @@ public class AuthController {
         return "index";
     }
 
+    @GetMapping("/")
+    public String redirect() {
+        return "index";
+    }
+
     // handler method to handle user registration form request
     @GetMapping("/register")
     public String showRegistrationForm(Model model) {
